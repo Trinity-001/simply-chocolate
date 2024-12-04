@@ -1,10 +1,10 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Montserrat, sans-serif;
-    margin: 0;
+  font-family: Montserrat, sans-serif;
+  /* margin: 0; */
 }
 
 h1,
@@ -14,37 +14,24 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
 ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    display: block;
-    cursor: pointer;
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  /* display: block; */
+  cursor: pointer;
 }
 
 /* ------ header------ */
@@ -53,50 +40,51 @@ button {
 }
 
 .container-wrap {
-    width: 1168px;
-    display: flex;
-    align-items: center;
+  /* width: 1168px; */
+  /* display: flex;
+  align-items: center; */
 }
 
 .container {
-    width: 100vw;
-    padding: 0 16px;
+  width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.03em;
-    color: #111;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  color: #111;
 }
 .logo-accent {
-    font-style: italic;
+  font-style: italic;
 }
 
 .header-nav {
 }
 
 .header-nav-list {
-    display: flex;
-    gap: 24px;
+  display: flex;
+  gap: 24px;
 }
 
 .header-nav-item {
 }
 
 .header-nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
-    color: #111;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: #111;
 }
 
 .header-social-list {
-    display: flex;
-    margin-left: auto;
-    gap: 14px;
+  display: flex;
+  margin-left: auto;
+  gap: 14px;
 }
 
 .header-social-item {
@@ -110,34 +98,272 @@ button {
 /* -----hero --------- */
 
 .hero {
-    /* border-radius: 30px;
-    width: 1136px;
-    height: 600px;
-    background: rgba(17, 17, 17, 0.6);
-    padding: 381px 40px 40px 40px; */
-}
-
-.container {
+  /* border-radius: 30px;
+  width: 1136px;
+  height: 600px; */
+  background: rgba(17, 17, 17, 0.6);
+  padding: 381px 40px 40px 40px;
 }
 
 .hero-container {
 }
 
 .hero-title {
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1.21;
-    letter-spacing: -0.03em;
-    /* color: #fff; */
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
 }
 
 .hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
 }
 
 .hero-btn-2 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
 }
 
-.hero-scroll-link {
+.hero-scroll-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #fff;
 }
 
 /* -----end hero------- */
+
+/* ----- benefits----- */
+
+.benefits {
+  background: #1e1823;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.benefits-list {
+}
+
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ----- end benefits----- */
+
+/* --------------taste---------- */
+
+.taste {
+}
+
+.taste-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+
+.taste-span {
+  color: #fd9222;
+}
+
+.taste-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+
+.taste-list {
+}
+
+.taste-item {
+}
+
+.taste-image {
+}
+
+.taste-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/* ------end taste------ */
+
+/* -------made---------- */
+
+.made {
+}
+
+.made-image {
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+}
+
+.made-list {
+}
+
+.made-item {
+}
+
+.made-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+/* ------end made------- */
+
+/* -----------products---------- */
+
+.products {
+}
+
+.products-list {
+}
+
+.products-item {
+}
+
+.products-image {
+}
+
+.products-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.products-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.products-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  padding: 8px 20px;
+  width: 94px;
+  height: 33px;
+  background: #fafafa;
+}
+
+/* -------end products------- */
+
+/* ------- sellers------- */
+
+.sellers {
+}
+
+.sellers-list {
+}
+
+.sellers-item {
+}
+
+.sellers-image {
+}
+
+.sellers-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+/* -------end sellers-------- */
+
+/* --------review-------- */
+
+.review {
+}
+
+.review-list {
+}
+
+.review-item {
+}
+
+.review-image {
+  border-radius: 100%;
+}
+
+.review-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: #111;
+}
+
+.review-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
+  border: 1px solid #fd9222;
+border-radius: 100px;
+padding: 14px 40px;
+width: 222px;
+height: 50px;
