@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
 button {
   /* display: block; */
   cursor: pointer;
@@ -363,7 +367,66 @@ button {
   font-size: 18px;
   color: #111;
   border: 1px solid #fd9222;
-border-radius: 100px;
-padding: 14px 40px;
-width: 222px;
-height: 50px;
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+}
+
+/* -------------end review------- */
+
+/* ------footer--------- */
+
+.footer {
+  background: #1e1823;
+  padding: 50px 32px;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-address {
+}
+
+.footer-address-list {
+}
+
+.footer-address-item {
+}
+
+.footer-address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
+
+.footer-nav {
+  color: #fff;
+}
+
+.footer-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 100px;
+  padding: 17px 40px;
+  width: 137px;
+  height: 52px;
+  background: #fd9222;
+}
