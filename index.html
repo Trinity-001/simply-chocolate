@@ -1,3 +1,5 @@
+<!-- "use strict" -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,11 +18,12 @@
   <body>
     <header class="header">
       <div class="container container-wrap">
-        <a class="logo" href="./index.html"
-          ><span class="logo-accent">SIMPLY</span> CHOCOLATE
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
         <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html"
+            ><span class="logo-accent">SIMPLY</span> CHOCOLATE
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+
           <ul class="header-nav-list">
             <li class="header-nav-item">
               <a class="header-nav-link" href="./index.html">Home</a>
@@ -35,9 +38,10 @@
             </li>
           </ul>
         </nav>
+
         <ul class="header-social-list">
           <li class="header-social-item">
-            <a href="">
+            <a class="header-social-link" href="">
               <img
                 class="header-social-img"
                 src="./images/instagram.svg"
@@ -46,7 +50,7 @@
             </a>
           </li>
           <li class="header-social-item">
-            <a href="">
+            <a class="header-social-link" href="">
               <img
                 class="header-social-img"
                 src="./images/facebook.svg"
@@ -55,7 +59,7 @@
             </a>
           </li>
           <li class="header-social-item">
-            <a href="">
+            <a class="header-social-link" href="">
               <img
                 class="header-social-img"
                 src="./images/twitter.svg"
@@ -70,20 +74,22 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
+            Treat yourself or a loved one to <br />
+            our finest ingredients for a moment of pure delight!
           </h1>
-          <button class="hero-btn">Buy now</button>
-          <a href="" class="hero-btn-2">How it’s made</a>
+          <div class="hero-nav">
+            <button class="hero-btn">Buy now</button>
+            <a href="" class="hero-btn-2">How it’s made</a>
 
-          <a class="hero-scroll-btn">scroll down</a>
+            <a class="hero-scroll-btn">scroll down</a>
+          </div>
         </div>
       </section>
       <section class="benefits">
-        <div class="container">
+        <div class="container benefits-container">
           <h2 class="visually-hidden benefits-subtitle">benefits</h2>
           <ul class="benefits-list">
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -92,7 +98,7 @@
                 Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -102,7 +108,7 @@
                 in affordable luxury today.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
@@ -201,10 +207,10 @@
         </div>
       </section>
       <section class="made">
-        <div class="container">
-          <h2 class="taste-title" id="made">
-            HOW IT’S <span class="taste-span">made?</span>
-          </h2>
+        <h2 class="made-title" id="made">
+          HOW IT’S <span class="made-span">made?</span>
+        </h2>
+        <div class="container made-container">
           <img
             class="made-image"
             src="./images/made.jpg"
@@ -212,46 +218,49 @@
             width="600"
             height="400"
           />
-          <h3 class="made-subtitle">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="made-list">
-            <li class="made-item">
-              <p class="made-text">
-                Heat the milk in a saucepan without bringing it to a boil. Add
-                sugar and cocoa powder.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                At the same time, prepare a water bath. Melt the butter on it.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                "Mix" the milk mixture and already liquid butter. Mix thoroughly
-                with a silicone spatula so that the mass becomes uniform and
-                silky.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                Heat the mixture over low heat, letting it barely boil.
-              </p>
-            </li>
-            <li class="made-item">
-              <p class="made-text">
-                Pour the chocolate into special containers (can be replaced with
-                ice molds). Allow to cool and harden.
-              </p>
-            </li>
-          </ul>
+          <div class="made-steps">
+            <h3 class="made-subtitle">
+              Try our chocolates today and discover the perfect balance of
+              flavor
+            </h3>
+            <ul class="made-list">
+              <li class="made-item">
+                <p class="made-text">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-text">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-text">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </p>
+              </li>
+              <li class="made-item">
+                <p class="made-text">
+                  Heat the mixture over low heat, letting it barely boil.
+                </p>
+              </li>
+              <li class="made-item last">
+                <p class="made-text">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="products">
         <div class="container">
-          <h2 class="taste-title">
-            Our <span class="taste-span">pRODUCTS</span>
+          <h2 class="made-title">
+            Our <span class="made-span">pRODUCTS</span>
           </h2>
           <ul class="products-list">
             <li class="products-item">
@@ -259,6 +268,8 @@
                 class="products-image"
                 src="/images/products-1.jpg"
                 alt="orange-chocolate"
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">orange</h3>
               <p class="products-text">Dark chocolate</p>
@@ -269,6 +280,8 @@
                 class="products-image"
                 src="./images/products-2.jpg"
                 alt=""
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">APPLE&CRANBERRY</h3>
               <p class="products-text">Milk chocolate</p>
@@ -279,6 +292,8 @@
                 class="products-image"
                 src="./images/products-3.jpg"
                 alt=""
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">lime&sea salt</h3>
               <p class="products-text">Dark chocolate</p>
@@ -289,6 +304,8 @@
                 class="products-image"
                 src="./images/products-4.jpg"
                 alt=""
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">pineapple</h3>
               <p class="products-text">Dark chocolate</p>
@@ -299,6 +316,8 @@
                 class="products-image"
                 src="./images/products-5.jpg"
                 alt=""
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">Classic</h3>
               <p class="products-text">Milk chocolate</p>
@@ -309,6 +328,8 @@
                 class="products-image"
                 src="./images/products-6.jpg"
                 alt=""
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">honey</h3>
               <p class="products-text">Milk chocolate</p>
@@ -319,6 +340,8 @@
                 class="products-image"
                 src="./images/products-7.jpg"
                 alt=""
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">Roasted fruits</h3>
               <p class="products-text">Dark chocolate</p>
@@ -329,6 +352,8 @@
                 class="products-image"
                 src="./images/products-8.jpg"
                 alt=""
+                width="230"
+                height="201"
               />
               <h3 class="products-subtitle">Classic</h3>
               <p class="products-text">White chocolate</p>
@@ -339,9 +364,7 @@
       </section>
       <section class="sellers">
         <div class="container">
-          <h2 class="taste-title">
-            <span class="taste-span">tOp</span> Sellers
-          </h2>
+          <h2 class="made-title"><span class="made-span">tOp</span> Sellers</h2>
           <ul class="sellers-list">
             <li class="sellers-item">
               <img
@@ -372,8 +395,8 @@
       </section>
       <section class="review">
         <div class="container">
-          <h2 class="taste-title">
-            <span class="taste-span" id="chocolate-is-loved">chocolate</span> is
+          <h2 class="made-title">
+            <span class="made-span" id="chocolate-is-loved">chocolate</span> is
             loved
           </h2>
           <ul class="review-list">
@@ -423,7 +446,7 @@
     <footer class="footer">
       <div class="container">
         <p class="footer-text">
-          <span class="taste-span">Chocolate</span> a delicious cure for a bad
+          <span class="made-span">Chocolate</span> a delicious cure for a bad
           day
         </p>
         <h3 class="footer-subtitle">Social networks</h3>

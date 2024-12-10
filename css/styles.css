@@ -1,3 +1,5 @@
+/* #region common */
+
 * {
   box-sizing: border-box;
 }
@@ -27,26 +29,34 @@ ol {
 
 a {
   text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 
 address {
   font-style: normal;
 }
 
+img {
+  display: block;
+}
+
 button {
-  /* display: block; */
+  display: inline-block;
   cursor: pointer;
 }
 
-/* ------ header------ */
+/* #endregion common */
+
+/*  #region header ---------- */
 
 .header {
+  padding: 24px 0 32px;
 }
 
 .container-wrap {
-  /* width: 1168px; */
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
 }
 
 .container {
@@ -62,11 +72,22 @@ button {
   letter-spacing: -0.03em;
   color: #111;
 }
+
+.header-logo {
+  /* display: flex;
+  align-items: center; */
+}
+
 .logo-accent {
   font-style: italic;
 }
 
 .header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-right: 90px;
 }
 
 .header-nav-list {
@@ -87,29 +108,38 @@ button {
 
 .header-social-list {
   display: flex;
-  margin-left: auto;
+  /* margin-left: auto; */
   gap: 14px;
 }
 
 .header-social-item {
 }
 
+.header-social-link {
+}
+
 .header-social-img {
 }
 
-/* -----end header------ */
+/*  #endregion header ---------- */
 
-/* -----hero --------- */
+/* #region hero ---------- */
 
 .hero {
-  /* border-radius: 30px;
-  width: 1136px;
+  /* width: 1136px;
   height: 600px; */
-  background: rgba(17, 17, 17, 0.6);
-  padding: 381px 40px 40px 40px;
+  margin-bottom: 80px;
 }
 
 .hero-container {
+  background: rgba(17, 17, 17, 0.6);
+  border-radius: 30px;
+  padding: 380px 40px 40px 40px;
+}
+
+.hero-nav {
+  display: flex;
+  align-items: center;
 }
 
 .hero-title {
@@ -118,17 +148,31 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-bottom: 32px;
+  max-width: 484px;
 }
 
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
+  border-radius: 100px;
+  padding: 14px 40px;
+  /* width: 144px;
+  height: 45px; */
+  background: #fd9222;
+  border: none;
+  margin-right: 14px;
   color: #fff;
 }
 
 .hero-btn-2 {
   font-weight: 600;
   font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 14px 40px;
+  min-width: 183px;
+  height: 45px;
   color: #fff;
 }
 
@@ -137,15 +181,22 @@ button {
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.03em;
+  margin-left: auto;
   color: #fff;
 }
 
-/* -----end hero------- */
+/* #endregion hero ----------  */
 
-/* ----- benefits----- */
+/* #region benefits ---------- */
 
 .benefits {
   background: #1e1823;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 120px;
+}
+
+.benefits-container {
 }
 
 .visually-hidden {
@@ -168,22 +219,31 @@ button {
 }
 
 .benefits-list {
+  display: flex;
+  gap: 88px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.benefits-item {
+  /* width: calc((100% - 2 * 88px) / 3); */
+  flex-basis: calc((100% - 2 * 88px) / 3);
 }
 
 .benefits-text {
   font-weight: 400;
   font-size: 14px;
-
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* ----- end benefits----- */
+/* #endregion benefits  */
 
-/* --------------taste---------- */
+/*  #region taste ---------- */
 
 .taste {
+  margin-bottom: 120px;
 }
 
 .taste-title {
@@ -193,7 +253,9 @@ button {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
   color: #111;
+  margin-bottom: 28px;
 }
 
 .taste-span {
@@ -206,16 +268,43 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
+  margin-bottom: 50px;
   color: #111;
 }
 
 .taste-list {
+  display: flex;
+  gap: 24px 32px;
+  flex-wrap: wrap;
 }
 
 .taste-item {
+  border-radius: 15px;
+  width: calc((100% - 3 * 32px) / 4);
+  padding: 28px 24px;
+  border: 1px solid #fd9222;
+  color: #111;
 }
 
+.taste-item:nth-child(odd) {
+  color: #fff;
+}
+
+.taste-item:nth-child(4n + 1) {
+  background: #fd9222;
+}
+
+.taste-item:nth-child(4n + 3) {
+  background: #1e1823;
+}
+
+/* 
+.taste-item:nth-child(even) {
+  color: #fff;
+} */
+
 .taste-image {
+  margin-bottom: 36px;
 }
 
 .taste-subtitle {
@@ -224,14 +313,43 @@ button {
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #111;
+  /* color: #111; */
 }
 
-/* ------end taste------ */
+/* .taste-subtitle:nth-child(even) {
+  color: #fff;
+} */
 
-/* -------made---------- */
+/* #endregion taste ---------- */
+
+/*  #region made---------- */
 
 .made {
+  margin-bottom: 120px;
+}
+
+.made-container {
+  display: flex;
+  gap: 20px;
+}
+
+.made-steps {
+  padding: 32px;
+}
+
+.made-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.made-span {
+  color: #fd9222;
 }
 
 .made-image {
@@ -241,6 +359,7 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  margin-bottom: 28px;
   color: #111;
 }
 
@@ -248,7 +367,16 @@ button {
 }
 
 .made-item {
+  margin-bottom: 24px;
 }
+
+.made-item:last-child {
+  margin-bottom: 0;
+}
+
+/* .last {
+  margin-bottom: 0;
+} */
 
 .made-text {
   font-weight: 400;
@@ -258,17 +386,23 @@ button {
   color: #111;
 }
 
-/* ------end made------- */
+/* #endregion made------- */
 
-/* -----------products---------- */
+/* #region products---------- */
 
 .products {
+  margin-bottom: 120px;
 }
 
 .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 18px;
 }
 
 .products-item {
+  padding: 32px 20px;
+  width: calc((100% - 3 * 18px) / 4);
 }
 
 .products-image {
@@ -281,6 +415,7 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
+  text-align: center;
 }
 
 .products-text {
@@ -289,6 +424,10 @@ button {
   line-height: 1.16667;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  text-align: center;
+}
+
+.products-list .products-btn {
 }
 
 .products-btn {
@@ -303,11 +442,12 @@ button {
   background: #fafafa;
 }
 
-/* -------end products------- */
+/* #endregion products------- */
 
-/* ------- sellers------- */
+/* #region sellers------- */
 
 .sellers {
+  margin-bottom: 120px;
 }
 
 .sellers-list {
@@ -328,11 +468,12 @@ button {
   color: #111;
 }
 
-/* -------end sellers-------- */
+/* #endregion sellers-------- */
 
-/* --------review-------- */
+/* #region review-------- */
 
 .review {
+  margin-bottom: 120px;
 }
 
 .review-list {
@@ -373,9 +514,9 @@ button {
   height: 50px;
 }
 
-/* -------------end review------- */
+/* #endregion review------- */
 
-/* ------footer--------- */
+/* #region footer--------- */
 
 .footer {
   background: #1e1823;
@@ -426,7 +567,9 @@ button {
   color: #fff;
   border-radius: 100px;
   padding: 17px 40px;
-  width: 137px;
+  min-width: 137px;
   height: 52px;
   background: #fd9222;
 }
+
+/*  #endregion footer  */
