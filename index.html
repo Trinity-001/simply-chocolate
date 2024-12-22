@@ -1,5 +1,3 @@
-<!-- "use strict" -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,7 +19,7 @@
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
             ><span class="logo-accent">SIMPLY</span> CHOCOLATE
-            <img src="./images/logo.svg" alt="logo" />
+            <img src="./images/logo.svg" alt="logo" width="24" height="24" />
           </a>
 
           <ul class="header-nav-list">
@@ -41,30 +39,48 @@
 
         <ul class="header-social-list">
           <li class="header-social-item">
-            <a class="header-social-link" href="">
-              <img
+            <a class="header-social-link" href="" rel="noopener noreferrer">
+              <svg class="header-social-img" width="24" height="24">
+                <use
+                  class="header-social-icon"
+                  href="./images/icons.svg#icon-instagram"
+                ></use>
+              </svg>
+              <!-- <img
                 class="header-social-img"
                 src="./images/instagram.svg"
                 alt="Instagram"
-              />
+              /> -->
             </a>
           </li>
           <li class="header-social-item">
-            <a class="header-social-link" href="">
-              <img
+            <a class="header-social-link" href="" rel="noopener noreferrer">
+              <svg class="header-social-img" width="24" height="24">
+                <use
+                  class="header-social-icon"
+                  href="./images/icons.svg#icon-facebook"
+                ></use>
+              </svg>
+              <!-- <img
                 class="header-social-img"
                 src="./images/facebook.svg"
                 alt="Facebook"
-              />
+              /> -->
             </a>
           </li>
           <li class="header-social-item">
-            <a class="header-social-link" href="">
-              <img
+            <a class="header-social-link" href="" rel="noopener noreferrer">
+              <svg class="header-social-img" width="24" height="24">
+                <use
+                  class="header-social-icon"
+                  href="./images/icons.svg#icon-twitter"
+                ></use>
+              </svg>
+              <!-- <img
                 class="header-social-img"
                 src="./images/twitter.svg"
                 alt="Twitter"
-              />
+              /> -->
             </a>
           </li>
         </ul>
@@ -78,18 +94,34 @@
             our finest ingredients for a moment of pure delight!
           </h1>
           <div class="hero-nav">
-            <button class="hero-btn">Buy now</button>
-            <a href="" class="hero-btn-2">How it’s made</a>
+             <button class="hero-btn" >Buy now</button> 
+            <a href="#made" class="hero-btn-2">How it’s made</a>
 
-            <a class="hero-scroll-btn">scroll down</a>
+            <a class="hero-scroll-btn"
+              >scroll down
+              <svg class="hero-icon" width="38" height="38">
+                <use
+                  class="hero-icon-icon"
+                  href="./images/icons.svg#icon-scroll-down"
+                ></use>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
       <section class="benefits">
         <div class="container benefits-container">
           <h2 class="visually-hidden benefits-subtitle">benefits</h2>
-          <ul class="benefits-list">
+          <ul class="benefits-list" >
             <li class="benefits-item">
+              <svg class="benefits-icon">
+                <use
+                  class="benefits-icon-icon"
+                  width="32"
+                  height="32"
+                  href="./images/icons.svg#icon-benefits-1"
+                ></use>
+              </svg>
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -99,6 +131,14 @@
               </p>
             </li>
             <li class="benefits-item">
+              <svg class="benefits-icon">
+                <use
+                  class="benefits-icon-icon"
+                  href="./images/icons.svg#icon-benefits-2"
+                  width="32"
+                  height="32"
+                ></use>
+              </svg>
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -109,6 +149,14 @@
               </p>
             </li>
             <li class="benefits-item">
+              <svg class="benefits-icon">
+                <use
+                  class="benefits-icon-icon"
+                  width="32"
+                  height="32"
+                  href="./images/icons.svg#icon-benefits-3"
+                ></use>
+              </svg>
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
@@ -141,7 +189,12 @@
                 width="214"
                 height="160"
               />
-              <h4 class="taste-subtitle">MILK CHOCOLATE</h4>
+             <div class="taste-over">
+               <h5 class="taste-over-title">Milk chocolate</h5><button class="taste-over-btn">chocolate</button><button class="taste-over-btn-2">the benefits</button>
+                <p class="taste-over-text">Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and milk. It is the most consumed type of chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although four-fifths of all milk chocolate is sold in the United States and Europe.</p>
+                </div>
+                <h4 class="taste-subtitle">MILK CHOCOLATE</h4>
+             
             </li>
             <li class="taste-item">
               <img
@@ -151,6 +204,11 @@
                 width="214"
                 height="160"
               />
+              <div class="taste-over">
+               <h5 class="taste-over-title">Milk</h5><button class="taste-over-btn">milk</button><button class="taste-over-btn-2">the benefits</button>
+                 <p class="taste-over-text">Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals (including breastfed human infants) before they are able to digest solid food.Early-lactation milk, which is called colostrum, contains antibodies that strengthen the immune system.</p>
+                </div>
+             
               <h4 class="taste-subtitle">MILK</h4>
             </li>
             <li class="taste-item">
@@ -161,7 +219,13 @@
                 width="214"
                 height="160"
               />
-              <h4 class="taste-subtitle">NUTS</h4>
+              <div class="taste-over">
+                 <h5 class="taste-over-title">nuts</h5><button class="taste-over-btn">nuts</button><button class="taste-over-btn-2">the benefits</button>
+                <p class="taste-over-text">Almonds, pistachios, and walnuts are some types of nuts that contain healthy nutrients. When eaten as part of a nutrient-dense diet, these 9 nuts may offer benefits such as reducing your risk of heart disease. They’re a good source of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
+                </div>
+
+                
+                 <h4 class="taste-subtitle">NUTS</h4>
             </li>
             <li class="taste-item">
               <img
@@ -171,6 +235,12 @@
                 width="214"
                 height="160"
               />
+            <div class="taste-over">
+               <h5 class="taste-over-title">semi - sweet chocolate</h5><button class="taste-over-btn">sweet chocolate</button><button class="taste-over-btn-2">the benefits</button>
+                <p class="taste-over-text">Semi-sweet chocolate has a cocoa solid content of 35 to 65%. One of the best ways to gain an understanding of this type of chocolate is to compare it to a different type of chocolate. Semisweet is darker than milk chocolate. In a taste comparison, it has a slightly bitter taste whereas milk chocolate is sweeter and more mellow. </p>
+                </div>
+
+              
               <h4 class="taste-subtitle">SEMI - SWEET CHOCOLATE</h4>
             </li>
             <li class="taste-item">
@@ -181,6 +251,11 @@
                 width="214"
                 height="160"
               />
+              <div class="taste-over">
+               <h5 class="taste-over-title">CACAO</h5><button class="taste-over-btn">cacao</button><button class="taste-over-btn-2">the benefits</button>
+               <p class="taste-over-text">Cocoa is a natural product obtained from the fruits of the cocoa tree (Theobroma cacao). This tropical fruit contains beans, from which cocoa mass, cocoa powder and chocolate are made. The history of the use of cocoa goes back to ancient times. Already in ancient Mesoamerica, the Mayan and Aztec civilizations used cocoa in their culture and rituals</p>
+                </div>
+             
               <h4 class="taste-subtitle">CACAO</h4>
             </li>
             <li class="taste-item">
@@ -191,7 +266,12 @@
                 width="214"
                 height="160"
               />
-              <h4 class="taste-subtitle">RASPBERRY</h4>
+                <div class="taste-over">
+               <h5 class="taste-over-title">raspberry</h5><button class="taste-over-btn">raspberry</button><button class="taste-over-btn-2">the benefits</button>
+              <p class="taste-over-text">Raspberry is a tasty and aromatic berry plant that is popular all over the world. It belongs to the pink family and grows in many regions, including North America, Europe and Asia. Raspberries have many varieties and color variations, from red to yellow and black.</p>
+                </div>
+              
+                <h4 class="taste-subtitle">RASPBERRY</h4>
             </li>
             <li class="taste-item">
               <img
@@ -201,6 +281,12 @@
                 width="214"
                 height="160"
               />
+              <div class="taste-over">
+               <h5 class="taste-over-title">COCONUT OIL</h5><button class="taste-over-btn">COCONUT OIL</button><button class="taste-over-btn-2">the benefits</button>
+             <p class="taste-over-text">Coconut oil is a vegetable oil obtained from the pulp of the fruit of the coconut palm (Cocos nucifera). It is widely used in cooking, cosmetics and medicine, thanks to its numerous useful properties. Coconut oil is a source of saturated fats, especially medium-chain fatty acids, such as lauric acid.</p>
+                </div>
+
+              
               <h4 class="taste-subtitle">COCONUT OIL</h4>
             </li>
           </ul>
@@ -259,7 +345,7 @@
       </section>
       <section class="products">
         <div class="container">
-          <h2 class="made-title">
+          <h2 class="made-title" id="products">
             Our <span class="made-span">pRODUCTS</span>
           </h2>
           <ul class="products-list">
@@ -367,27 +453,39 @@
           <h2 class="made-title"><span class="made-span">tOp</span> Sellers</h2>
           <ul class="sellers-list">
             <li class="sellers-item">
-              <img
-                class="sellers-image"
-                src="./images/sellers-1.jpg"
-                alt="chocolate-with-nuts"
-              />
+
+              <div class="sellers-item-over">
+                <img
+                  class="sellers-image"
+                  src="./images/sellers-1.jpg"
+                  alt="chocolate-with-nuts"
+                />
+                <p class="sellers-over-text">Chocolate with nuts is a delectable combination that brings together the smoothness of chocolate and the crunchiness of nuts. Whether it's milk chocolate, dark chocolate, or white chocolate, the addition of nuts adds a whole new dimension of flavor and texture.</p>
+              </div>
+
               <h3 class="sellers-subtitle">CHOCOLATE WITH NUTS</h3>
             </li>
-            <li class="sellers-item">
-              <img
-                class="sellers-image"
-                src="./images/sellers-2.jpg"
-                alt="chocolate-with-fruits"
-              />
+            <li class="sellers-item ">
+              <div class="sellers-item-over">
+                <img
+                  class="sellers-image"
+                  src="./images/sellers-2.jpg"
+                  alt="chocolate-with-fruits"
+                />
+                <p class="sellers-over-text">Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of taste.</p>
+                
+              </div>
               <h3 class="sellers-subtitle">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="sellers-item">
+              <div class="sellers-item-over">
               <img
                 class="sellers-image"
                 src="./images/sellers-3.jpg"
                 alt="dark-chocolate"
               />
+              <p class="sellers-over-text">Dark chocolate is a rich and indulgent treat that is beloved by many chocolate enthusiasts. It is made from cocoa beans, which are roasted, ground and then processed to produce chocolate liquor. Dark chocolate contains a higher percentage of cocoa solids compare to milk chocolate.</p>
+              </div>
               <h3 class="sellers-subtitle">DARK CHOCOLATE</h3>
             </li>
           </ul>
@@ -395,7 +493,7 @@
       </section>
       <section class="review">
         <div class="container">
-          <h2 class="made-title">
+          <h2 class="made-title review-title">
             <span class="made-span" id="chocolate-is-loved">chocolate</span> is
             loved
           </h2>
@@ -406,6 +504,7 @@
                 src="./images/review-1.svg"
                 alt="victoria-dobrzhanska"
               />
+
               <h3 class="review-subtitle">Victoria Dobrzhanska</h3>
               <p class="review-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -418,6 +517,7 @@
                 src="./images/review-2.svg"
                 alt="nazar-babenko"
               />
+
               <h3 class="review-subtitle">Nazar Babenko</h3>
               <p class="review-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -431,6 +531,7 @@
                 src="./images/review-3.svg"
                 alt="olena-kampusch"
               />
+
               <h3 class="review-subtitle">Olena Kampusch</h3>
               <p class="review-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -445,74 +546,103 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <p class="footer-text">
-          <span class="made-span">Chocolate</span> a delicious cure for a bad
-          day
-        </p>
-        <h3 class="footer-subtitle">Social networks</h3>
-        <ul class="header-social-list">
-          <li class="header-social-item">
-            <a class="header-social-link" href="">
-              <img
-                class="header-social-img"
-                src="./images/instagram.svg"
-                alt="Instagram"
-              />
-            </a>
-          </li>
-          <li class="header-social-item">
-            <a class="header-social-link" href="">
-              <img
-                class="header-social-img"
-                src="./images/facebook.svg"
-                alt="Facebook"
-              />
-            </a>
-          </li>
-          <li class="header-social-item">
-            <a class="header-social-link" href="">
-              <img
-                class="header-social-img"
-                src="./images/twitter.svg"
-                alt="Twitter"
-              />
-            </a>
-          </li>
-        </ul>
-        <address class="footer-address">
-          <h3 class="footer-subtitle">Contact us</h3>
-          <ul class="footer-address-list">
-            <li class="footer-address-item">
-              <a class="footer-address-link" href="tel:380684439426"
-                >+380 (68) 443-94-26</a
-              >
-            </li>
-            <li class="footer-address-item">
-              <a class="footer-address-link" href="mailto:simplychoc@gmail.com"
-                >simplychoc@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a class="header-nav-link footer-nav" href="./index.html">Home</a>
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link footer-nav" href="#made"
-                >How it’s made?</a
-              >
-            </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link footer-nav" href="#chocolate-is-loved"
-                >Chocolate is loved</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <button>Enter your email</button>
-        <button class="footer-btn">Subscribe</button>
+        <div class="footer-flex">
+          <p class="footer-text">
+            <span class="made-span">Chocolate</span> a delicious cure for a bad
+            day
+          </p>
+
+          <div class="footer-social-wrap">
+            <h3 class="footer-subtitle">Social networks</h3>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link" href=""
+                  >
+                  <svg class="footer-icon" width="24" height="24">
+                    <use class="footer-icon-icon" href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+  
+                  <!-- <img
+                    class="footer-social-img"
+                    src="./images/instagram.svg"
+                    alt="Instagram"
+                  /> -->
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href=""
+                  >
+                  <svg class="footer-icon" width="24" height="24">
+                    <use class="footer-icon-icon" href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                  <!-- <img
+                    class="footer-social-img"
+                    src="./images/facebook.svg"
+                    alt="Facebook"
+                  /> -->
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link" href=""
+                  >
+                  <svg class="footer-icon" width="24" height="24">
+                    <use class="footer-icon-icon" href="./images/icons.svg#icon-twitter" ></use>
+                  </svg>
+                  <!-- <img
+                    class="footer-social-img"
+                    src="./images/twitter.svg"
+                    alt="Twitter"
+                  /> -->
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <address class="footer-address">
+            <h3 class="footer-subtitle">Contact us</h3>
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <a class="footer-address-link" href="tel:380684439426"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a
+                  class="footer-address-link"
+                  href="mailto:simplychoc@gmail.com"
+                  >simplychoc@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-nav-container">
+          <nav class="footer-nav">
+            <ul class="footer-nav-list">
+              <li class="footer-nav-item">
+                <a class="footer-nav-link footer-nav" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link footer-nav" href="#made"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="footer-nav-item">
+                <a class="footer-nav-link footer-nav" href="#chocolate-is-loved"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <form class="footer-form" autocomplete="off">
+            <input  class="footer-input" type="email" placeholder="Enter your email">
+         
+          </input>
+            <button class="footer-btn" >Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
   </body>
