@@ -51,5 +51,8 @@
     <symbol id="icon-make-marker" viewBox="0 0 32 32">
       <path fill="#4c4c4c" style="fill: var(--color1, #4c4c4c); stroke: var(--color2, #eceded)" stroke="#eceded" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30 16c0 7.732-6.268 14-14 14s-14-6.268-14-14c0-7.732 6.268-14 14-14s14 6.268 14 14z"></path>
     </symbol>
+    <symbol id="icon-taste-pointer" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M9.143 16h13.715M22.857 16l-3.431-3.428M22.857 16l-3.429 3.428M16 30.857c8.205 0 14.857-6.652 14.857-14.857s-6.652-14.857-14.857-14.857c-8.205 0-14.857 6.652-14.857 14.857s6.652 14.857 14.857 14.857z"></path>
+    </symbol>
   </defs>
 </svg>
