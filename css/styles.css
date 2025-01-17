@@ -54,6 +54,18 @@ button {
   cursor: pointer;
 }
 
+.container-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  /* width: 1168px; */
+  width: 375px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
 .main-title {
   font-weight: 600;
   font-size: 24px;
@@ -93,18 +105,6 @@ input {
 .header {
   padding: 24px 0 32px;
 }
-
-.container-wrap {
-  display: flex;
-  align-items: center;
-}
-
-.container {
-  width: 1168px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
 
 .logo {
   font-weight: 700;
@@ -150,13 +150,11 @@ input {
   transition: color 400ms ease;
 }
 
- 
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: #fd9222;
   outline: none;
 }
-
 
 .header-social-list {
   display: flex;
@@ -188,10 +186,7 @@ input {
 /* #region hero ---------- */
 
 .hero {
-  /* width: 1136px;
-  height: 600px; */
   margin-bottom: 80px;
-  
 }
 
 .hero-container {
@@ -235,8 +230,7 @@ input {
   border: none;
   margin-right: 14px;
   color: var(--white-2);
-  transition: color 400ms ease, background-color 400ms ease; 
-  
+  transition: color 400ms ease, background-color 400ms ease;
 }
 
 .hero-btn:hover,
@@ -265,7 +259,6 @@ input {
   border: 1px solid var(--orange);
   color: var(--orange);
   outline: none;
-  
 }
 
 .hero-scroll-btn {
@@ -275,7 +268,6 @@ input {
   letter-spacing: -0.03em;
   margin-left: auto;
   transition: color 400ms ease;
- 
 }
 
 .hero-scroll-btn:hover,
@@ -294,19 +286,20 @@ input {
 .hero-icon-icon {
 }
 
-
 /* #endregion hero ----------  */
 
 /* #region benefits ---------- */
 
 .benefits {
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
+  background: var(--violet);
 }
 
 .benefits-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: var(--violet);
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .benefits-subtitle {
@@ -317,26 +310,31 @@ input {
 
 .benefits-list {
   display: flex;
-  gap: 88px;
-  padding-left: 18px;
-  padding-right: 18px;
+  flex-wrap: wrap;
+  /* gap: 88px; */
+  gap: 20px;
+  /* padding-left: 18px;
+  padding-right: 18px; */
 }
 
 .benefits-item {
-  flex-basis: calc((100% - 2 * 88px) / 3);
+  /* flex-basis: calc((100% - 2 * 88px) / 3); */
+  width: 100%;
   position: relative;
+  padding-right: 28px;
 }
 
+/* 
 .benefits-item:not(:last-child)::after {
-content: "";
-border: 1px solid rgba(255, 255, 255, 0.5);
-width: 1px;
-height: 124px;
-position: absolute;
-right: -18px;
-bottom: 50%;
-transform: translateY(50%);
-}
+  content: '';
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 1px;
+  height: 124px;
+  position: absolute;
+  right: -18px;
+  bottom: 50%;
+  transform: translateY(50%);
+} */
 
 .benefits-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -345,13 +343,12 @@ transform: translateY(50%);
   height: 62px;
   padding: 15px;
   margin-bottom: 22px;
-  
 }
 
 .benefits-icon-icon {
   width: 32px;
   height: 32px;
-  }
+}
 
 .benefits-text {
   font-weight: 400;
@@ -405,12 +402,10 @@ transform: translateY(50%);
   overflow: hidden;
 }
 
-
 .taste-pointer {
-stroke-width: 1px;
-stroke: #fafafa;
-fill: transparent;
-
+  stroke-width: 1px;
+  stroke: #fafafa;
+  fill: transparent;
 }
 
 .taste-item:nth-child(even) .taste-pointer {
@@ -420,19 +415,18 @@ fill: transparent;
 .taste-pointer-btn {
   display: block;
   padding: 0;
-position: absolute;
- top: 14px;
- right: 14px;
- border: none;
- border-radius: 100%;
- width: 24px;
- height: 24px;
- background-color: transparent;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
 }
 
-
 .taste-pointer-btn:focus {
- outline: none;
+  outline: none;
 }
 
 .taste-item:nth-child(odd) {
@@ -458,7 +452,6 @@ position: absolute;
 .taste-item:hover .taste-over {
   transform: translateY(0);
 }
-
 
 .taste-over {
   position: absolute;
@@ -500,7 +493,6 @@ position: absolute;
   transition: color 400ms ease, background-color 400ms ease, border 400ms ease;
 }
 
-
 .taste-over-btn:hover,
 .taste-over-btn:focus {
   color: var(--orange);
@@ -522,15 +514,13 @@ position: absolute;
   transition: color 400ms ease, background-color 400ms ease, border 400ms ease;
 }
 
-
 .taste-over-btn-2:hover,
 .taste-over-btn-2:focus {
- border: 1px solid #fd9222;
-   color: var(--orange);
+  border: 1px solid #fd9222;
+  color: var(--orange);
   background-color: #fcf1e0;
   outline: none;
 }
-
 
 .taste-over-text {
   padding: 20px 15px;
@@ -582,7 +572,7 @@ position: absolute;
 }
 
 .made-list {
-  }
+}
 
 /* так маркер списку зробити не вдасться, 
 бо він специфічний за розміром та 
@@ -590,8 +580,8 @@ position: absolute;
 
 .made-item {
   margin-bottom: 24px;
- padding-left: 16px;
- position: relative;
+  padding-left: 16px;
+  position: relative;
 
   /* list-style-image: url(../images/make-marker.svg); */
 }
@@ -606,15 +596,14 @@ position: absolute;
   } */
 
 .made-icon {
-position: absolute;
-left: 0;
-top: 5px;
+  position: absolute;
+  left: 0;
+  top: 5px;
 }
 
 .made-item:last-child {
   margin-bottom: 0;
 }
-
 
 .made-text {
   font-weight: 400;
@@ -635,8 +624,7 @@ top: 5px;
 } */
 
 .made-text::selection {
-   background-color: #fcf1e0;
-
+  background-color: #fcf1e0;
 }
 
 /* #endregion made------- */
@@ -669,9 +657,9 @@ top: 5px;
   transition-duration: 400ms;
 }
 
-.products-image:hover  {
- transform: scale(1.5);
- /* scale: 1.5; */
+.products-image:hover {
+  transform: scale(1.5);
+  /* scale: 1.5; */
 }
 
 .products-subtitle {
@@ -713,15 +701,13 @@ top: 5px;
   margin-right: auto;
 }
 
-
 .products-btn:hover,
 .products-btn:focus {
-   border: 1px solid rgba(64, 64, 64, 0.4);
-   transition-duration: 400ms;
-   transition-timing-function: ease;
-   box-shadow: 5px 5px 5px #979494;
-   outline: none;
-   
+  border: 1px solid rgba(64, 64, 64, 0.4);
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  box-shadow: 5px 5px 5px #979494;
+  outline: none;
 }
 
 /* #endregion products------- */
@@ -767,7 +753,6 @@ top: 5px;
   overflow: hidden;
 }
 
-
 .sellers-image {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -775,7 +760,6 @@ top: 5px;
   transition-duration: 700ms;
   transition-delay: 500ms;
 }
-
 
 .sellers-over-text {
   position: absolute;
@@ -793,7 +777,8 @@ top: 5px;
   background: linear-gradient(
     161deg,
     rgba(253, 253, 255, 0.1) 0%,
-    rgba(8, 2, 21, 0.1) 100%);
+    rgba(8, 2, 21, 0.1) 100%
+  );
   transform: rotateY(180deg);
   overflow: auto;
   transition-duration: 700ms;
@@ -806,7 +791,6 @@ top: 5px;
 }
 
 /* другий варіант для виїзду overlay */
-
 
 /* 
 .sellers-over-text {
@@ -833,7 +817,6 @@ top: 5px;
   transition-delay: 500ms;
   backface-visibility: hidden;
 } */
-
 
 /* #endregion sellers-------- */
 
@@ -881,7 +864,6 @@ top: 5px;
   text-align: center;
   color: var(--black);
   margin-bottom: 24px;
-  
 }
 
 .review-text {
@@ -893,12 +875,11 @@ top: 5px;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
-  
 }
 
 .review-text::selection {
-   background-color: #fcf1e0;
-  }
+  background-color: #fcf1e0;
+}
 
 .review-btn {
   font-weight: 600;
@@ -939,8 +920,8 @@ top: 5px;
   padding-bottom: 50px;
   display: flex;
   align-items: flex-start;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
-  }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .footer-text {
   font-weight: 500;
@@ -984,12 +965,10 @@ top: 5px;
 .footer-social-link:focus {
   stroke: #fd9222;
   outline: none;
-  
 }
 
-
 .footer-icon {
-  }
+}
 
 .footer-icon-icon {
 }
@@ -1017,11 +996,10 @@ top: 5px;
   transition: color 400ms ease;
 }
 
-
 .footer-address-link:hover,
 .footer-address-link:focus {
-color: #fd9222;
-outline: none;
+  color: #fd9222;
+  outline: none;
 }
 
 .footer-bottom {
@@ -1055,9 +1033,7 @@ outline: none;
 .footer-nav-link:focus {
   color: #fd9222;
   outline: none;
-  
 }
-
 
 .footer-form {
   display: flex;
@@ -1071,9 +1047,9 @@ outline: none;
   width: 313px;
   height: 52px;
   background-color: var(--violet);
- color:#fff;
- font-family: inherit;
- font-size: 16px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
 }
 
 .footer-input:hover::placeholder,
@@ -1169,7 +1145,7 @@ outline: none;
 }
 
 .modal-close-icon {
- outline: none;
+  outline: none;
 }
 
 .modal-field {
@@ -1354,3 +1330,51 @@ outline: none;
 }
 
 /* #endregion modal------------ */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .benefits-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .benefits-list {
+    gap: 44px 88px;
+  }
+
+  .benefits-item {
+    padding-right: 0;
+    flex-basis: calc((100% - 88px) / 2);
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .container {
+    width: 1168px;
+  }
+
+  .benefits-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .benefits-item {
+    flex-basis: calc((100% - 2 * 88px) / 3);
+  }
+
+  * .benefits-item:not(:last-child)::after {
+    content: '';
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 1px;
+    height: 124px;
+    position: absolute;
+    right: -45px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+}
