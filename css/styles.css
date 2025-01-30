@@ -104,13 +104,16 @@ input {
 /*  #region header ---------- */
 
 .header {
-  padding: 24px 0 32px;
+  /* padding: 24px 0 32px; */
+  padding: 20px 0px 14px;
 }
 
 .logo {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
+  /* font-size: 18px; */
+  font-size: 14px;
+  /* line-height: 1.11; */
+  line-height: 1.29;
   letter-spacing: -0.03em;
   color: var(--black);
 }
@@ -1331,13 +1334,21 @@ input {
 
 /* #endregion modal------------ */
 
-/* #region mobile---------- */
+/* #region tablet---------- */
 
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
     padding-bottom: 50px;
     padding-top: 50px;
+  }
+
+  .header {
+    padding: 24px 32px 35px;
+  }
+
+  .header-nav {
+    margin-right: 82px;
   }
 
   .benefits-container {
@@ -1355,9 +1366,18 @@ input {
   }
 }
 
+/* #endregion tablet---------- */
+
+/* #region desktop---------- */
+
 @media screen and (min-width: 1168px) {
   .container {
     width: 1168px;
+  }
+
+  .logo {
+    font-size: 18px;
+    line-height: 1.11;
   }
 
   .benefits-container {
@@ -1381,4 +1401,4 @@ input {
   }
 }
 
-/* #endregion mobile---------- */
+/* #endregion desktip---------- */
